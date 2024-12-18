@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.info{
+    width: 235px;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-personal{
+    margin-bottom: 20px;
+}
+
+.info-personal .foto{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #484848;
+}
+
+.info-personal .foto:hover{
+    border: 5px solid #ee0a0a;
+}
+
+.info-personal h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #f1f1f1;
+}
+
+.info-personal p{
+    font-size: 0.9rem;
+   margin-bottom: 10px;
+   color: #8a8a8a;
+   text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin-bottom: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover{
+    color: #ee0a0a;
+}
+
+.portada{
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(./assets/foto-portada.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portada h1{
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.portada h1 span{
+    color: #ee0a0a;
+}
+
+.portada p{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+button{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 4px  solid #ee0a0a;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-color: #ee0a0a;
+}
