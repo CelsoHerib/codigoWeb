@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(./assets/henry-co-3coKbdfnAFg-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+nav{
+    max-width: 600px;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+nav a:hover{
+    transition: .5s;
+    color: #3a6afd;
+}
+
+.info{
+    text-align: center;
+    animation: 1.5s entrada-info;
+}
+
+.info h1{
+    font-size: 80px;
+    font-weight: normal;
+    padding-top: 80px;
+}
+
+.info p{
+    font-size: 24px;
+   font-weight: bold;
+}
+
+.info button{
+    padding: 15px;
+    background-color: #3a6afd;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.info button:hover{
+    background-color: #5b82f7;
+    color: antiquewhite;
+    transition: .5s;
+}
+
+.cuadros{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 70px;
+    animation: 1.5s entrada-cuadros;
+}
+
+.cuadro{
+    background-color: #242934;
+    padding: 40px 0;
+    width: 300px;
+    text-align: center;
+    border: 3px solid #3a6afd;
+    font-size: 40px;
+}
+
+@keyframes entrada-info{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entrada-cuadros{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
