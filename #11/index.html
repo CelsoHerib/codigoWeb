@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Galería</title>
+    </head>
+    <body>
+        <h1>Galería de Platos</h1>
+
+        <!--Contenedor de imagenes-->
+        <div class="contenedor-platos">
+            <img src="./asssets/plato1.jpg" alt="Plato  Especial uno"
+                onclick="expandir(this)">
+            <img src="./asssets/plato2.jpg" alt="Plato Especial dos"
+                onclick="expandir(this)">
+            <img src="./asssets/plato3.jpg" alt="Plato Especial tres"
+                onclick="expandir(this)">
+            <img src="./asssets/plato4.jpg" alt="Plato Especial cuatro"
+                onclick="expandir(this)">
+        </div>
+
+        <!--Contenedor de imagenes expandida-->
+        <div class="contenedor-expandido">
+
+            <!--Boton de cerrar-->
+            <button class="cerrar" onclick="this.parentElement.style.display = 'none' ">&times;</button>
+
+            <!--Imagen expandida-->
+            <img src="./asssets/plato1.jpg" alt="Plato 1" id="imgExpandida">
+
+            <!--Texto de la imagen-->
+            <div id="imgTexto">Plato Especial uno</div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
