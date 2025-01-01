@@ -109,9 +109,7 @@ header{
 }
 
 nav{
-    position: absolute;
-    top: 220px;
-    left: 688px;
+    width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 20px 0px;
 }
