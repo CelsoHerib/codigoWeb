@@ -4,11 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
 }
 
 #hero {
@@ -33,45 +29,47 @@ body {
     clip-path: polygon(50% 50%, 100% 100%, 0 100%);
 }
 
-#hero header{
+header{
     max-width: 1140px;
     margin: auto;
 }
 
-#hero header .encabezado{
+.encabezado{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
 }
 
-#hero header .encabezado div{
+.encabezado div{
     width: 33%;
 }
  
-#hero header .encabezado .redes a{
+.encabezado .redes a{
+    width: 37px;
+    height: 37px;
     display: inline-block;
-    color: #f4f4f4;
+    color: #fff;
     margin-right: 25px;
     transition: color .5s linear;
 }
 
-#hero header .encabezado .redes a:hover{
+.encabezado .redes a:hover{
     color: #d90f0e;
 }
 
-#hero header .encabezado .marca{
+.encabezado .marca{
     text-align: center;
 }
 
-#hero header .encabezado .marca img{
+.encabezado .marca img{
     display: block;
     margin: auto;
     width: 100px;
     border-radius: 30%;
 }
 
-#hero header .encabezado .marca a{
+.encabezado .marca a{
     display: block;
     text-decoration: none;
     font-size: 30px;
@@ -79,7 +77,97 @@ body {
     font-weight: 700;
 }
 
-#hero header .encabezado .marca .slogan{
+.encabezado .marca .slogan{
     font-size: 14px;
     color: #9faabb;
+}
+
+.encabezado .botones{
+    text-align: right;
+}
+
+.encabezado .botones span{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #d90f0e 0%, #d90f0e 100%);
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    cursor: pointer;
+    transition: background-color .5s linear;
+}
+
+.encabezado .botones span:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.encabezado .botones .bar{
+    display: none;
+}
+
+nav{
+    position: absolute;
+    top: 220px;
+    left: 688px;
+    border-top: 1px solid #ebebeb;
+    padding: 20px 0px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    background-color: #d90f0e;
+    border-radius: 5px;
+    color: #000;
+}
+
+.info{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.info h1{
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.info p{
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 7;
+    padding-bottom: 24px;
+}
+
+.info a{
+    display: inline-block;
+    padding: 7px 15px;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.info a:hover{
+    background: #d90f0e;
+    color: #000;
 }
