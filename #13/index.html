@@ -33,14 +33,15 @@
                     </div>
 
                     <div class="botones">
-                        <span class="buscar"><i
+                        <span class="buscar"
+                            onclick="document.getElementById('busqueda').style.display='flex'"><i
                                 class="fa-solid fa-magnifying-glass"></i></span>
-                        <span class="bar"><i
+                        <span class="bar"  onclick="document.getElementById('menu-lateral').style.display='block'"><i
                                 class="fa-solid fa-bars"></i></span>
                     </div>
                 </div>
 
-                <nav>
+                <nav class="menu">
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Blog</a></li>
@@ -60,5 +61,39 @@
             </div>
 
         </section>
-    </body>
-</html>
+
+        <!--pantalla de búsqueda -->
+        <div class="busqueda" id="busqueda">
+            <span class="close"
+                onclick="document.getElementById('busqueda').style.display='none'">&times;</span>
+            <div class="controles">
+                <h2>Busca en la biblioteca</h2>
+                <form action>
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!--pantalla menu lateral-->
+        <div class="menu-lateral" id="menu-lateral">
+            <span class="btnclose"
+                onclick="parentElement.style.display='none'">&times;</span>
+
+            <div class="logo">
+                <a href="#">Mr. X</a>
+            </div>
+
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Secciones</a></li>
+                    <li><a href="#">Destacados</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </body>
+    </html>
