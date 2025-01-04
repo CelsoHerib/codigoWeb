@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Libre Caslon Text', serif;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.tab{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.tab button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+}
+
+.tab button.active{
+    background-color: #ccc;
+}
+
+.tabcontent{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tabcontent p{
+    margin: 20px 0;
+}

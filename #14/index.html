@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--tab links-->
+        <div class="tab">
+            <button id="b1" class="tablinks"
+                onclick="openTab(event, 'html')">HTML</button>
+            <button id="b2" class="tablinks"
+                onclick="openTab(event, 'css')">CSS</button>
+            <button id="b3" class="tablinks"
+                onclick="openTab(event, 'javascript')">JAVASCRIPT</button>
+        </div>
+
+        <!--tab content-->
+        <div id="html" class="tabcontent">
+            <h3>HTML</h3>
+            <p>HTML (HyperText Markup Language) es un lenguaje de marcado de
+                hipertexto que se utiliza para estructurar y mostrar las páginas
+                web.
+                Se trata de un código que define la estructura de una página web
+                y su contenido, como párrafos, imágenes, tablas, listas, videos,
+                botones, entre otros.
+                El HTML se basa en etiquetas y atributos para definir cómo se
+                presentará el contenido en un navegador web. Los navegadores
+                utilizan el HTML para interpretar y mostrar el contenido de las
+                páginas web.</p>
+        </div>
+        <div id="css" class="tabcontent">
+            <h3>CSS</h3>
+            <p>CSS son las siglas de Cascading Style Sheets, que en español
+                significa "Hojas de Estilo en Cascada". Es un lenguaje de
+                programación que se utiliza para dar estilo y diseño a las
+                páginas web:
+
+                Cambiar el color, la fuente, el tamaño y el espaciado del
+                contenido
+                Dividir en columnas
+                Agregar animaciones y efectos visuales
+
+                CSS se utiliza en conjunto con HTML, un lenguaje de marcado que
+                se usa para crear el contenido de una página web. CSS separa el
+                contenido del diseño,
+                lo que facilita la gestión del aspecto visual de las
+                páginas.</p>
+        </div>
+        <div id="javascript" class="tabcontent">
+            <h3>JAVASCRIPT</h3>
+            <p>JavaScript es un lenguaje de programación que se utiliza para
+                crear páginas web interactivas y dinámicas.
+                Se usa para añadir características como: Actualizar fuentes de
+                redes sociales, Mostrar animaciones y mapas interactivos,
+                Validar formularios, Controlar multimedia, Agregar efectos de
+                estilo dinámicos.
+                JavaScript se ejecuta directamente en el navegador del usuario,
+                por lo que los desarrolladores no necesitan recargar la página
+                para realizar tareas.</p>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
