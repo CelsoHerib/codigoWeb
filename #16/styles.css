@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baskervville', sans-serif;
+}
+
+section {
+    height: 100vh;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+#inicio {
+    background-color: #0c2139;
+    color: #aae6cb;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+img{
+    width: 15%;
+}
+
+.info {
+    width: 60%;
+    color: #000;
+    text-align: justify;
+    padding: 20px;
+}
+ .info-futbol{
+    display: inline;
+    width: 50%;
+    gap: 20px;
+ }
+
+.futbol {
+    position: relative;
+    opacity: 0;
+    left: 50px;
+}
+
+.efecto-futbol {
+    left: 0px;
+    opacity: 1;
+    transition: 1s linear;
+}
+
+.tenis {
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.efecto-tenis {
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s linear;
+}
+
+.judo {
+    position: relative;
+    bottom: -80px;
+    opacity: 0;
+}
+
+.efecto-judo {
+    opacity: 1;
+    bottom: 0;
+    transition: 1s linear;
+}
+
+.natacion {
+    position: relative;
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.efecto-natacion {
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s linear;
+}
+
+.golf {
+    position: relative;
+    bottom: -80px;
+    opacity: 0;
+}
+
+.efecto-golf {
+    opacity: 1;
+    bottom: 0;
+    transition: 1s linear;
+    text-align: left;
+}
