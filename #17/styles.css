@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 46px;
+    align-items: center;
+    text-align: center;
+}
+.habilidades{
+    width: 1080px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid #fdd1d1;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    background-color: #947b7b;
+    margin: 10px 0;
+}
+
+.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.html{
+    background-color: #04aa6d;
+    animation: fillhtml 2s forwards;
+}
+
+@keyframes fillhtml {
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+
+.css{
+    background-color: #2196f3;
+    animation: fillcss 2s forwards;
+}
+
+@keyframes fillcss {
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+
+.javascript{
+    background-color: #f44336;
+    animation: filljavascript 2s forwards;
+}
+
+@keyframes filljavascript {
+    0%{width: 0;}
+    100%{width: 50%;}
+}
