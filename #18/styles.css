@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nucha', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio{
+    background-color: #f6830f;
+}
+
+#a1930,
+#a1934,
+#a1938,
+#a1950,
+#a1954,
+#a1958,
+#a1962,
+#a1966,
+#a1970,
+#a1974,
+#a1978,
+#a1982,
+#a1986,
+#a1990,
+#a1994,
+#a1998,
+#a2002,
+#a2006,
+#a2010,
+#a2014,
+#a2018,
+#a2022,
+#a2026,
+#a2030
+{
+background-color: linear-gradient(rgb(241, 0, 0) 10%, rgb(119, 190, 119) 85%, rgb(47, 47, 145) 90%);
+}
+
+
+#inicio h1{
+	font-size: 68px;
+	letter-spacing: 5px;
+    text-align: center;
+}
