@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
+header, section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@ section img{
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	background-color: #2D4059;
+	background-color: red;
 	text-decoration: none;
 	color: white;
 	margin: 15px;
@@ -181,3 +181,19 @@ section img{
 	color: #000;
 	font-weight: bold;
 }
+
+.eliminado {
+    background-color: red;
+    color: white;
+  }
+  
+  .siguiente, .anterior {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .actual {
+    background-color: green;
+    color: white;
+  }
+  

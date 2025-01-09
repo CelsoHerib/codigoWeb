@@ -1,9 +1,9 @@
-window.onscroll = function() {myFunction()};
+
 window.addEventListener('scroll', myFunction);
 
 
-var secciones = document.getElementsByTagName("section");
-var fechas = document.getElementsByClassName("fecha");
+const secciones = document.getElementsByTagName("section");
+const fechas = document.getElementsByClassName("fecha");
 
 function myFunction(){
     const scrollPosition = window.scrollY;
