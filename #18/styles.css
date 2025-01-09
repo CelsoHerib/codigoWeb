@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nucha', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-section{
+section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,41 +19,165 @@ section{
     align-items: center;
 }
 
-#inicio{
-    background-color: #f6830f;
+#inicio {
+    background-color: #e4ab72;
 }
 
-#a1930,
-#a1934,
-#a1938,
-#a1950,
-#a1954,
-#a1958,
-#a1962,
-#a1966,
-#a1970,
-#a1974,
-#a1978,
-#a1982,
-#a1986,
-#a1990,
-#a1994,
-#a1998,
-#a2002,
-#a2006,
-#a2010,
-#a2014,
-#a2018,
-#a2022,
-#a2026,
-#a2030
-{
-background-color: linear-gradient(rgb(241, 0, 0) 10%, rgb(119, 190, 119) 85%, rgb(47, 47, 145) 90%);
+#a1930 {
+    background-color: rgb(235, 125, 125) ;
+}
+
+#a1934{
+    background-color: aliceblue;
+}
+
+#a1938{
+    background-color: aqua;
 }
 
 
-#inicio h1{
-	font-size: 68px;
-	letter-spacing: 5px;
+#a1950{
+    background-color: blueviolet;
+}
+
+#a1954{
+    background-color: #009440;
+}
+
+#a1958{
+    background-color: #acbee3;
+}
+
+#a1962{
+    background-color: #faca01;
+}
+
+#a1966{
+    background-color: #6d8ac8;
+}
+
+#a1970{
+    background-color: #126f50;
+}
+
+#a1974{
+    background-color: #846a2c;
+}
+
+#a1978{
+    background-color: #ab5050;
+}
+
+#a1982{
+    background-color: #123389;
+}
+
+#a1986{
+    background-color: #df9eaf;
+}
+
+#a1990{
+    background-color: #eeae82;
+}
+
+#a1994{
+    background-color: #816871;
+}
+
+#a1998{
+    background-color: #ff8181;
+}
+
+#a2002{
+    background-color: #2d4c6c;
+}
+
+#a2006{
+    background-color: #aa9635;
+}
+
+#a2010{
+    background-color: #becae5;
+}
+
+#a2014{
+    background-color: #7798bd;
+}
+
+#a2018{
+    background-color: #466264;
+}
+
+#a2022{
+    background-color: #d0e7ff;
+}
+
+#a2026{
+    background-color: #a8efff;
+}
+
+#a2030{
+    background-color: #ff0000;
+}
+
+#inicio h1 {
+    font-size: 68px;
+    letter-spacing: 5px;
     text-align: center;
+}
+
+section h2{
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+section img{
+	margin-top: 30px;
+	max-width: 300px;
+}
+
+.contenedor-tiempo{
+    padding: auto;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor-tiempo .linea{
+	position: absolute;
+	top: 30px;
+	height: 2px;
+	background-color: black;
+	z-index: -2;
+
+}
+
+.fecha{
+	display: inline-block;
+	font-size: 15px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #2D4059;
+	text-decoration: none;
+	color: white;
+	margin: 15px;
+    padding: 25px 20px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	scale: 1;
+	transition: background-color, transform .5s linear;
+
+}
+
+.seleccionado{
+	transform: scale(1.2) ;
+	background-color: #EA5455;
+	color: #000;
+	font-weight: bold;
 }
